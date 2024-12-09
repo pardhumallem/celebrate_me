@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Reminder</title>
+  <link rel="stylesheet" type="text/css" href="hackthon.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.7/index.global.min.css">
+</head>
+<body>
+  <header>
+     
+    <h1 class="heading">CelebrateMe</h1>
+    
+    
+    
+  </header>
+  <main>
+    <section class="form-section">
+      <h2>Add an Occasion</h2>
+      <form id="event-form">
+        <label for="date">Date:</label>
+        <input type="date" id="date" required>
+
+        <label for="type">Type:</label>
+        <select id="type" required>
+          <option value="birthday">Birthday</option>
+          <option value="anniversary">Anniversary</option>
+          <option value="special">Special Occasion</option>
+        </select>
+
+        <label for="description">Description:</label>
+        <input type="text" id="description" placeholder="Event details" required>
+
+        <button type="submit">Add Event</button>
+        <button type="button" id="clear-events">Clear All</button>
+      </form>
+    </section>
+
+    <!-- Calendar Section -->
+    <section id="calendar-section">
+      <div id="calendar"></div>
+    </section>
+
+    <!-- Event List Section -->
+    <section id="event-list">
+      <h2>Added Events</h2>
+      <div id="event-box"></div>
+    </section>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.7/index.global.min.js"></script>
+  <script type="text/javascript" src="hackthon.js"></script>
+</body>
+</html>
